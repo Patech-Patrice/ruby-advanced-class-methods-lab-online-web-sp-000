@@ -50,16 +50,12 @@ class Song
     new_song #return new_song
   end
  
- 
- def self.create_from_file_name(file_name)
+
   def self.destroy_all
     @@all = []
   end
  
- 
- 
- 
-   
+
 end
 
  
