@@ -23,12 +23,14 @@ class Song
   end
  
  
-  def self.create_by_name(song_name)
+  def self.create_by_name(song_name) #.create_by_name instantiates and saves a song with a name property
      new_song = self.new
      new_song.name = song_name
     @@all << new_song
     new_song
   end
+  
+  def self.find_by_name
     
  
  
