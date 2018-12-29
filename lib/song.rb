@@ -39,7 +39,9 @@ class Song
     # creates a new Song object with the provided title if one doesn't already exist
   end
   
- def self.alphabetical(song_name)
+ def self.alphabetical
+    @@all.sort_by! { |song| song.name }
+  end
  
  
  
