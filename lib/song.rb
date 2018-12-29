@@ -34,6 +34,7 @@ class Song
     self.all.detect { |song| song.name == song_name} # returns falsey when a song name is not present in @@all
   end
     
+  def self.find_or_create_by_name(song_name)
  
  
  
