@@ -35,7 +35,7 @@ class Song
   end
     
   def self.find_or_create_by_name(song_name) #invokes .find_by_name and .create_by_name instead of repeating code
-    self.find_by_name(song_name) || self.create_by_name(song_name)
+    self.find_by_name(song_name) || self.create_by_name(song_name) # returns the existing Song object (doesn't create a new one) when provided the title of an existing Song
   end
   
  
