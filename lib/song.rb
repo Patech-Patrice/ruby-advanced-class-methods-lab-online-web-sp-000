@@ -22,7 +22,6 @@ class Song
     new_song
   end
  
- 
   def self.create_by_name(song_name) #.create_by_name instantiates and saves a song with a name property
      new_song = self.new
      new_song.name = song_name
@@ -57,13 +56,9 @@ class Song
     @@all << new_song
   end
 
-
-
-  def self.destroy_all #
+  def self.destroy_all # clears all the song instances from the @@all array
     @@all = []
   end
- 
-
-end
+ end
 
  
